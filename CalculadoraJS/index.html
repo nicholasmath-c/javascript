@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULADORA</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <div class="container">
+        <div class="col">
+            <label for="">Valor 1 (Base/Peso)</label>
+            <input type="text" name="calculadora" id="txtVal1">
+            <label for="">Valor 2 (Altura)</label>
+            <input type="text" name="calculadora" id="txtVal2">
+        </div>
+        <div class="col">
+            <h2>Operações</h2>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbSomar">
+                <label>Somar</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbSubtrair">
+                <label>Subtrair</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbMultiplicar">
+                <label>Multiplicar</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbDividir">
+                <label>Dividir</label>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Área</h2>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbRetangulo">
+                <label>Retângulo</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbQuadrado">
+                <label>Quadrado</label>
+            </div>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbTriangulo">
+                <label>Triângulo</label>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Outros</h2>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbPar">
+                <label>Verificar Par</label>
+                <input type="text" name="calculadora" id="txtPar">
+            </div>
+            <div class="row">
+                <input type="radio" name="calculadora" id="rdbIMC">
+                <label>Calcular IMC</label>
+            </div>
+        </div>
+    </div>
+    <div class="resultado">
+        <h2>RESULTADO:</h2>
+        <label for="" id="lblResultado"></label>
+    </div>
+    <div class="buttons">
+        <button class="btn" role="button" id="btnCalcular">CALCULAR/VERIFICAR</button>
+        <button class="btn-limpar" role="button" id="btnLimpar">Limpar</button>
+    </div>
+</body>
+
+</html>
